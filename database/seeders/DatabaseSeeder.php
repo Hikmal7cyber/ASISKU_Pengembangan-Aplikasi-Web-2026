@@ -97,8 +97,8 @@ class DatabaseSeeder extends Seeder
 
         // Plotting Asprak ke Jadwal
         $jadwalA->aspraks()->attach([$asprak1->id, $asprak2->id]);
-        $jadwalB->aspraks()->attach([$asprak1->id, $asprak3->id]);
-        $jadwalC->aspraks()->attach([$asprak2->id, $asprak3->id]);
+        $jadwalB->aspraks()->attach([$asprak2->id, $asprak3->id]);
+        $jadwalC->aspraks()->attach([$asprak3->id]);
 
         // 4. Buat Materi Pekanan (Pekan 1 - 4)
         $pekan1 = WeeklyMaterial::create([
